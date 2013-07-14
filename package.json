@@ -1,0 +1,24 @@
+{
+  "name": "strider-travis",
+  "version": "0.0.0",
+  "description": "Travis config file detection",
+  "main": "worker.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaredly/strider-travis.git"
+  },
+  "keywords": [
+    "strider",
+    "travis",
+    "config"
+  ],
+  "author": "Jared Forsyth <jared@jaredforsyth.com>",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "~2.1.0",
+    "strider-custom": "git+https://github.com/jaredly/strider-custom.git#add-yaml"
+  }
+}
