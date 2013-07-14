@@ -26,6 +26,7 @@ module.exports = function (ctx, cb) {
       if (config.install) {
         runScript(ctx, 'prepare', config.install, function (err) {
           if (err) return cb(err);
+          if (!config.before_script) return cb(0);
           runScript(ctx, 'prepare', config.before_script, cb);
         });
       } else if (config.before_script) {
