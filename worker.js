@@ -36,7 +36,7 @@ module.exports = function (ctx, cb) {
       }
     },
     test: function (ctx, cb) {
-      if (!ctx.travisConfig || !ctx.travisConfig.script) return;
+      if (!ctx.travisConfig || !ctx.travisConfig.script) return cb(0);
       runScript(ctx, 'test', ctx.travisConfig.script, cb);
     }
   });
