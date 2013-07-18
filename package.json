@@ -20,5 +20,8 @@
   "dependencies": {
     "js-yaml": "~2.1.0",
     "strider-custom": "git+https://github.com/jaredly/strider-custom.git#add-yaml"
+  },
+  "devDependencies": {
+    "jshint": "~2.1.4"
   }
 }
